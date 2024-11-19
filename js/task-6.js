@@ -27,7 +27,7 @@ function createBoxes() {
     box.style.height = boxSize + 'px';
     box.style.backgroundColor = getRandomHexColor();
     box.style.margin = '10px';
-    boxes.appendChild(box);
+    fragment.appendChild(box);
   }
 
   boxes.appendChild(fragment);
