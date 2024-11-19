@@ -18,6 +18,8 @@ function createBoxes() {
     return;
   }
 
+  const fragment = document.createDocumentFragment();
+
   for (let i = 0; i < boxesNumber; i++) {
     let box = document.createElement('div');
     let boxSize = 30 + i * 10;
@@ -27,6 +29,8 @@ function createBoxes() {
     box.style.margin = '10px';
     boxes.appendChild(box);
   }
+
+  boxes.appendChild(fragment);
 
   fieldEl.value = '';
 }
